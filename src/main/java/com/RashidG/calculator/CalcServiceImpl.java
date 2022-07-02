@@ -29,7 +29,9 @@ public class CalcServiceImpl implements CalcService {
         int n2 = Integer.parseInt(num2);
         String result;
         if (n2 == 0) {
-            result = "Cant divide to 0";
+//            throw new
+            throw new IllegalArgumentException("Can'd divide to 0!");
+//            result = "Cant divide to 0";
         } else {
             double div = (double) n1/(double)n2;
             result = num1 + " / " + num2 + " = " + div;
